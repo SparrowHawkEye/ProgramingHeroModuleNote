@@ -52,3 +52,24 @@ if(condition){
 - To assign a value in a variable we use `single =` and `double =` to compare two value.
 - `&& - and operator` have all the conditions need to be true to get a true result.
 - `|| - or operator` have any one of the condition to be true to get a true result.
+
+# Multi Condition and nested conditions (18.8)
+
+- For nested condition we use
+
+```
+if(condition) {
+  block of code;
+} else if(condition) {
+  2nd block of code;
+}
+"//else if continues till the last condition"
+else{
+  last block of code;
+}
+```
+
+# Summery (18.9)
+
+- Learn about JavaScript comparison operator. (==, ===, !=, !==, >, <, >=, <=)
+  > Learn more from MDN docs and W3Schools.
