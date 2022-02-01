@@ -9,3 +9,21 @@
 
 
 // ২. কোন একটা সংখ্যা প্রাইম সংখ্যা (prime number) কিনা। সেটা চেক করার একটা ফাংশন লিখো। 
+
+
+ function checkPrimeNumber(number){
+   if(number<2){
+     return false;
+   }else if(number==2){
+     return true;
+   }else{
+     for(let i=2; i<number; i++){
+       if(number%i==0){
+         return false;
+       }
+     }
+     return true;
+   }
+ }
+  const primeNumber = checkPrimeNumber(15);
+  console.log(primeNumber)
