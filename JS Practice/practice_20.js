@@ -1,6 +1,19 @@
 // ১. leapYear() নামে ফাংশন লিখো এবং নেক্সট ইয়ার অর্থাৎ ২০২৩ কি leap year নাকি সেটা চেক করো। Leap year হলে ফাংশন true রিটার্ন করবে আর leap year না হলে false রিটার্ন করবে।
 
+function checkLeapYear(year){
+  let isLeapYear;
+  if ((year%4 == 0 && year %100 !=0) || (year%400 == 0)){
+    
+    isLeapYear = console.log(year +" is a leap year." );
 
+  } else {
+    isLeapYear = console.log(year +" is not a leap year." );
+  }
+return isLeapYear;
+}
+
+let yourGivenYear = 123;
+checkLeapYear(yourGivenYear);
 
 // ২. তোমার বয়স কি odd নাকি even সংখ্যা সেটা চেক কর একটা ফাংশন দিয়ে। সেই ফাংশনকে কোন সংখ্যা প্যারামিটার হিসেবে দিলে, সেই সংখ্যা Even হলে ফাংশন true রিটার্ন করবে আর Odd হলে false রিটার্ন করবে।
 
