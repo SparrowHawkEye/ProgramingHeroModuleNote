@@ -3,15 +3,22 @@
 //২. একটি কোড লিখ যেটা দিয়ে তিনটি সংখ্যা এর মধ্যে সবচেয়ে ছোট সংখ্যা বের করে দিতে পারবে।
 
 //৩.  একটি ফাংশন লিখ সেই ফাংশনের মধ্যে ইনপুট হিসেবে একটি array নিবে। সেই array এর মধ্যে অনেকগুলো সংখ্যা থাকবে। তোমার কাজ হবে ইনপুট নেয়া array এর মধ্যে যতগুলো সংখ্যা আছে তাদের গড় বের করবে। তারপর সেই ফাংশনের return হিসেবে দিয়ে দিবে।
+/* 
+function average(array) {
+  let sum = 0;
 
-let array = [23, 26, 28];
-for (let i = 0; i < array.length; i++) {
-  console.log(array[i]);
+  for (let i = 0; i < array.length; i++) {
+    if (typeof array[i] != "number") {
+      return "Please Input valid Number";
+    }
+    sum = sum + array[i];
+  }
+  let avg = sum / array.length;
+  return parseFloat(avg.toFixed(3));
 }
-
-// function average(array) {}
-// let givenArray = [23, 26, 28];
-// average(givenArray);
+let givenArray = [90, -77, 102, 125, 999, 1025];
+console.log(average(givenArray));
+ */
 //৪. একটি ফাংশন লিখ সেই ফাংশনের ইনপুট parameter হিসেবে একটি আয়তক্ষেত্রের দৈঘ্য আর উচ্চতা নিবে। তারপর সেই আয়তক্ষেত্রের ক্ষেত্রফল রেজাল্ট হিসেবে return করবে।
 /* 
 function areaOfRectangle(length, width) {
