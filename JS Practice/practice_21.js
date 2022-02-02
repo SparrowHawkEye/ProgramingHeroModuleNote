@@ -38,5 +38,17 @@ let givenLength = 204;
 let givenWidth = 41;
 console.log(areaOfRectangle(givenLength, givenWidth));
  */
-//৫. কোন একটি  array এর মধ্যে  অনেকগুলো সংখ্যা বের করার একটা program লিখ।
+//৫. কোন একটি  array এর মধ্যে অনেকগুলো সংখ্যার মধ্যে largest সংখ্যা বের করার একটা program লিখ।
+/* 
+function largestNumber(array){
 
+
+}
+ */
+let array = [50,150,240,360,840,50,60,80,90,100,200,300,]
+
+let largest=array[0]
+for (let i = 0; i < array.length; i++){
+ largest = array[i];
+ console.log(largest);
+}
