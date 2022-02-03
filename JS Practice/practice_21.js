@@ -45,10 +45,10 @@ function largestNumber(array){
 
 }
  */
-let array = [50,150,240,360,840,50,60,80,90,100,200,300,]
+/* et array = [50,150,240,360,840,50,60,80,90,100,200,300,]
 
 let largest=array[0]
 for (let i = 0; i < array.length; i++){
  largest = array[i];
  console.log(largest);
-}
+} */
