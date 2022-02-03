@@ -38,7 +38,7 @@ centimeterToMeter(givenCentimeter);
 // এখন তোমার কাজ হচ্ছে paperRequirements নামক ফাংশন লিখে ফেলা যাতে। সেই ফাংশনকে কল করে কোন বই এর কত কপি লাগবে বলে দিবে প্যারামিটার হিসেবে। আর ফাংশন হিসাব করে বলে দিবে তোমার সর্বমোট কতপৃষ্ঠা কাগজ লাগবে।
 
 // উত্তর হিসেবে সংখ্যা রিটার্ন করবে।
-
+/* 
 function paperRequirements(firstBookQty, secondBookQty, thirdBookQty){
 
  let pageRequired1stBook = 100;
@@ -55,6 +55,7 @@ let givenSecondBookQty = 30;
 let givenThirdBookQty = 2;
 
 paperRequirements(givenFirstBookQty,givenSecondBookQty,givenThirdBookQty)
+ */
 
 // ৪. একটা ফাংশন লিখবে। এই ফাংশনের নাম হবে bestFriend তারপর সেই ফাংশনে ইনপুট প্যারামিটার হিসেবে একটা array নিবে। সেই array এর মধ্যে তোমার সব ফ্রেন্ডের নাম থাকবে। এখন তোমার কাজ হচ্ছে যে ফ্রেন্ড এর নাম সবচেয়ে বড় সেই ফ্রেন্ড এর নাম রিটার্ন করে দেয়া। এই ক্ষেত্রে তুমি নামটা অর্থাৎ ফ্রেন্ডের নাম (স্ট্রিং) রিটার্ন করতে হবে।
 /* 
