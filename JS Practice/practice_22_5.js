@@ -14,7 +14,7 @@ feetToInch(givenFeet);
 
 // ২. একদম ফাংশন এর নাম হুবহু centimeterToMeter নাম দিয়ে একটা ফাংশন লিখবে। এই ফাংশনে ইনপুট হিসাবে কেউ সেন্টিমিটার দিবে আর সেই সেন্টিমিটার কে মিটার এ কনভার্ট করে রেজাল্ট রিটার্ন করবে।
 
-
+/* 
 function centimeterToMeter(centimeter) {
   let result = centimeter / 100;
   let meter = console.log(parseFloat(result.toFixed(3)));
@@ -23,7 +23,7 @@ function centimeterToMeter(centimeter) {
 let givenCentimeter = 1000;
 centimeterToMeter(givenCentimeter);
 
- 
+ */
 
 // ৩. আরেকটা ফাংশন লিখবে যেটার নাম লিখবে। যেই ফাংশনের নাম হবে paperRequirements এই ফাংশনের প্যারামিটার হিসেবে তিনটা প্যারামিটার হবে। প্রথম প্যারামিটার হবে তুমি প্রথম বই কত কপি ছাপাতে চাও। সেকেন্ড প্যারামিটার হবে তুমি সেকেন্ড বই কত কপি ছাপাতে চাও। আর থার্ড প্যারামিটার হবে তুমি থার্ড বই কত কপি ছাপাতে চাও। অর্থাৎ কোন বই এর কত কপি ছাপানো হবে সেটাই প্যারামিটার হিসেবে নিবে।
 
@@ -38,6 +38,23 @@ centimeterToMeter(givenCentimeter);
 // এখন তোমার কাজ হচ্ছে paperRequirements নামক ফাংশন লিখে ফেলা যাতে। সেই ফাংশনকে কল করে কোন বই এর কত কপি লাগবে বলে দিবে প্যারামিটার হিসেবে। আর ফাংশন হিসাব করে বলে দিবে তোমার সর্বমোট কতপৃষ্ঠা কাগজ লাগবে।
 
 // উত্তর হিসেবে সংখ্যা রিটার্ন করবে।
+
+function paperRequirements(firstBookQty, secondBookQty, thirdBookQty){
+
+ let pageRequired1stBook = 100;
+ let pageRequired2ndBook = 200;
+ let pageRequired3rdBook = 300;
+ let totalPageRequired = (pageRequired1stBook * firstBookQty) +(pageRequired2ndBook * secondBookQty)+ (pageRequired3rdBook * thirdBookQty);
+ 
+ return (console.log(`Total page Required for printing is ${totalPageRequired}`));
+
+}
+
+let givenFirstBookQty = 5;
+let givenSecondBookQty = 30;
+let givenThirdBookQty = 2;
+
+paperRequirements(givenFirstBookQty,givenSecondBookQty,givenThirdBookQty)
 
 // ৪. একটা ফাংশন লিখবে। এই ফাংশনের নাম হবে bestFriend তারপর সেই ফাংশনে ইনপুট প্যারামিটার হিসেবে একটা array নিবে। সেই array এর মধ্যে তোমার সব ফ্রেন্ডের নাম থাকবে। এখন তোমার কাজ হচ্ছে যে ফ্রেন্ড এর নাম সবচেয়ে বড় সেই ফ্রেন্ড এর নাম রিটার্ন করে দেয়া। এই ক্ষেত্রে তুমি নামটা অর্থাৎ ফ্রেন্ডের নাম (স্ট্রিং) রিটার্ন করতে হবে।
 /* 
