@@ -79,9 +79,27 @@ let givenFriendsName = [
   "Jaf Rasel",
 ];
 bestFriend(givenFriendsName);
+ */
 
-NOT COMPLETE
+// create a function that takes an array of names and returns the equal length name
+/* 
+function bestFriend(friendsArray){
+  let friendsNameLength = [];
+  for (const friend of friendsArray) {
+    let friendName = friend;
+    friendsNameLength.push(friendName.length);
+  }
+  let maxLength = Math.max(...friendsNameLength);
+  let bestFriendName = [];
+  for (const friend of friendsArray) {
+    if (friend.length === maxLength) {
+      bestFriendName.push(friend);
+    }
+  }
+  return (console.log(`Best Friend Name is ${bestFriendName}`));
+}
 
+bestFriend(["Reaz", "Mohs", "amin", "Atiq", "Zoba", "Asiq", "Raul", "Raan", "asel"]);
  */
 // ৫. এইটা একটু ট্রিকি হতে পারে। একটা array এর মধ্যে অনেকগুলা সংখ্যা থাকবে। তোমার কাজ হচ্ছে সংখ্যা গুলা একটার পর একটা করে চেক করা। এবং সংখ্যা গুলা যদি পজিটিভ সংখ্যা হয়। অর্থাৎ শূন্য বা শূন্যের চাইতে বড় হয় তাহলে সেগুলাকে কোন একটা array এর মধ্যে রাখবে। আর যদি নেগেটিভ সংখ্যা হয়। তাহলে লুপটা স্টপ করে দিবে। এবং লুপ বন্ধ করার আগ পর্যন্ত যতগুলা পজিটিভ সংখ্যা পাওয়া গেছে। সেগুলা রিটার্ন করে দিবে।
 /* 
@@ -102,3 +120,42 @@ let givenArray = [
 
 absArray(givenArray);
  */
+
+
+
+// decleare an object and change any of it's propertie
+/* 
+let friends = {
+  name: 'Reaz',
+  height: 173,
+  color: "white",
+  weight: 95,
+}
+
+friends.weight = 100; /// change any property value.
+friends.hair = "black"; /// adding a new property and value.
+
+/// changing properties
+  friends["colorEye"] = friends["color"]
+  delete friends["color"];
+///
+
+console.log(friends) */
+
+
+
+//a function to find the name of friend from an array with odd length and stop at the first name
+
+function oddFriend(array){
+  let oddLengthArray = [];
+  for (const friend of array) {
+    if (friend.length % 2 !== 0) {
+      oddLengthArray.push(friend);
+      return console.log(oddLengthArray);
+    }
+  }
+}
+
+let friendsName = ["Reaz", "M0", "amin4", "Atiq", "Zobba", "Asiq", "RauAl", "RaanA", "asel"];
+
+oddFriend(friendsName);
